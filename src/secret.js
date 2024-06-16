@@ -1,5 +1,5 @@
 require("dotenv").config();
-const serverPort = process.env.SERVER_PORT || 4001;
+const serverPort = process.env.SERVER_PORT || 4000;
 const mongodbURL =
   process.env.MONGODB_ATLAS_URL ||
   "mongodb+srv://raseltechnext:rasrasras@cluster0.5emovqu.mongodb.net/telecomDB";
