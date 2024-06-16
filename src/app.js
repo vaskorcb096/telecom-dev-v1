@@ -37,14 +37,14 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/api/users", userRouter);
-app.use("/api/categories", categoryRouter);
-app.use("/api/brands", brandRouter);
-app.use("/api/customers", customerRouter);
-app.use("/api/retailers", retailerRouter);
-app.use("/api/products", productRouter);
-app.use("/api/sales", salesRouter);
-app.use("/api/seed", seedRouter);
+app.use("v1/api/users", userRouter);
+app.use("v1/api/categories", categoryRouter);
+app.use("v1/api/brands", brandRouter);
+app.use("v1/api/customers", customerRouter);
+app.use("v1/api/retailers", retailerRouter);
+app.use("v1/api/products", productRouter);
+app.use("v1/api/sales", salesRouter);
+app.use("v1/api/seed", seedRouter);
 
 app.get("/", (req, res) => {
   res.send("Returns");
