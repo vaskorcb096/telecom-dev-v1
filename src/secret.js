@@ -2,7 +2,7 @@ require("dotenv").config();
 const serverPort = process.env.SERVER_PORT || 4001;
 const mongodbURL =
   process.env.MONGODB_ATLAS_URL ||
-  "mongodb+srv://raseltechnext:rasrasras@cluster0.5emovqu.mongodb.net/telecomDB";
+  "mongodb+srv://raseltechnext:rasrasras@cluster0.5emovqu.mongodb.net/telecomDB?retryWrites=true&w=majority";
 const defaultImagePath =
   process.env.DEFAULT_USER_IMAGE_PATH || "public/images/users/rasel.jpg";
 const jwtActivationKey = process.env.JWT_ACTIVATION_KEY || "hgffg_u88hbbb";
